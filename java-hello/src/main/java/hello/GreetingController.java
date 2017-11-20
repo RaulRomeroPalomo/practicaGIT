@@ -13,7 +13,7 @@ public class GreetingController {
         model.addAttribute("name", name);
         return "greeting";
     }
-    public String bye(@RequestParam(value="name", required=false, defaultValue="World") String name, Model model) {
+    public String bye(@RequestParam(value="name", required=false, defaultValue="Universe") String name, Model model) {
         model.addAttribute("name", name);
 	return "bye";
 	}
